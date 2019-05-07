@@ -9,6 +9,31 @@ void InsertSort(int a[], int n)
 
 	for (size_t i = 1; i < n; i++)
 	{
+		int value = a[i];
+		for (size_t j = i - 1; j >= 0; j--)
+		{
+			if (a[j] > value)
+			{
+				a[j + 1] = a[j]; // 跟冒泡相比可以节省两次交换操作
+			}
+			else
+			{
+				a[j + 1] = value;
+				break;
+			}
+		}
+	}
+}
+
+/*void InsertSort(int a[], int n)
+{
+	if (n <= 1)
+	{
+		return;
+	}
+
+	for (size_t i = 1; i < n; i++)
+	{
 		int pos = i;
 		for (size_t j = i-1; j >=0 ; j--)
 		{
@@ -25,7 +50,7 @@ void InsertSort(int a[], int n)
 			}
 		}
 	}
-}
+}*/
 
 
 
