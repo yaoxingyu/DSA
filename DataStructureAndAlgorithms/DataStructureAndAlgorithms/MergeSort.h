@@ -44,6 +44,11 @@ void MergeSort(int a[], int tmp[], int low, int high)
 }
 
 
+//////////////////////////////////////////////////////////////////////
+/*
+ 稳定，非原地，时间复杂度O(nlogn)
+*/
+
 /*std::vector<int> Merge(std::vector<int> vec1, std::vector<int> vec2)
 {
 	std::vector<int> result;
