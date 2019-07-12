@@ -25,6 +25,7 @@ int main()
 
 	// 快速排序
 	QuickSort(a, 0, length-1);
+	int k = FindK(a, 0, length - 1, 12);
 
 	// 爬楼梯问题
 	//cout << LadderStep::ClimbLadder(7) << endl;
