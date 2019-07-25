@@ -121,6 +121,7 @@
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="InsertSort.h" />
     <ClInclude Include="LadderStep.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="SelectSort.h" />
