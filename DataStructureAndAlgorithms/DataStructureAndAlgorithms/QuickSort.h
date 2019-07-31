@@ -3,23 +3,22 @@
 
 int partition(int a[], int low, int high)
 {
-	int i = low;
 	int flag = a[high];
 	for (int j = low; j < high; j++)
 	{
 		if (a[j] < flag)
 		{
 			int tmp = a[j];
-			a[j] = a[i];
-			a[i] = tmp;
-			i++;
+			a[j] = a[low];
+			a[low] = tmp;
+			low++;
 		}
 	}
 
-	int tmp = a[i];
-	a[i] = flag;
+	int tmp = a[low];
+	a[low] = flag;
 	a[high] = tmp;
-	return i;
+	return low;
 }
 
 void QuickSort(int a[], int low, int high)

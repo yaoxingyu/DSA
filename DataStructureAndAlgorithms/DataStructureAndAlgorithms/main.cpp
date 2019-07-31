@@ -28,11 +28,12 @@ int main()
 	//MergeSort(a, tmp, 0, length-1);
 
 	// 快速排序
-	//QuickSort(a, 0, length-1);
-	//int k = FindK(a, 0, length - 1, 12);
+	const int length = sizeof(a) / sizeof(int);
+	QuickSort(a, 0, length-1);
+	int k = FindK(a, 0, length - 1, 12);
 
 	// 单链表逆转
-	Node* pCur = nullptr;
+	/*Node* pCur = nullptr;
 	Node* pHead = nullptr;
 	for (size_t i = 0; i < 10; i++)
 	{
@@ -49,7 +50,7 @@ int main()
 		}
 	}
 
-	pHead = reverse(pHead);
+	pHead = reverse(pHead);*/
 
 	return 0;
 }
