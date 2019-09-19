@@ -7,10 +7,10 @@ void SelectSort(int a[], int n)
 		return;
 	}
 
-	for (size_t i = 0; i < n-1; i++)
+	for (int i = 0; i < n-1; i++)
 	{
 		int pos = i;
-		for (size_t j = i+1; j < n; j++)
+		for (int j = i+1; j < n; j++)
 		{
 			if (a[j] < a[pos])
 			{

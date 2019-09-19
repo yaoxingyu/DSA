@@ -7,10 +7,10 @@ void InsertSort(int a[], int n)
 		return;
 	}
 
-	for (size_t i = 1; i < n; i++)
+	for (int i = 1; i < n; i++)
 	{
 		int value = a[i];
-		for (size_t j = i - 1; j >= 0; j--)
+		for (int j = i - 1; j >= 0; j--)
 		{
 			if (a[j] > value)
 			{

@@ -118,6 +118,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="InsertSort.h" />
     <ClInclude Include="LadderStep.h" />
