@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "stdlib.h"
+
 #include "LadderStep.h"
 #include "BubbleSort.h"
 #include "InsertSort.h"
@@ -9,6 +11,7 @@
 #include "QuickSort.h"
 #include "LinkedList.h"
 #include "BinarySearch.h"
+#include "StringCopy.h"
 
 using namespace std;
 
@@ -38,14 +41,14 @@ int main()
 
 	//////////////////求平方根/////////////////////////////
 
-	while (true)
+	/*while (true)
 	{
 		std::cout << "enter the number you want to calc sqrt: ";
 		float f = 0.f;
 		cin >> f;
 		std::cout << endl;
 		std::cout << "result is " << Sqrt(f) << std::endl;
-	}
+	}*/
 	
 	///////////////////// 单链表逆转 //////////////////////
 	/*Node* pCur = nullptr;
@@ -66,6 +69,13 @@ int main()
 	}
 
 	pHead = reverse(pHead);*/
+
+	///////////////////////  strcpy ///////////////////////////////
+	const char* src = "this is a test for strcpy.";
+	char* dst = (char*)malloc(strlen(src));
+	StringCopy(src, dst);
+
+	printf(dst);
 
 	return 0;
 }

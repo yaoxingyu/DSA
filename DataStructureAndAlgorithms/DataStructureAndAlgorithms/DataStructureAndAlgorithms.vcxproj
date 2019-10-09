@@ -126,6 +126,7 @@
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="SelectSort.h" />
+    <ClInclude Include="StringCopy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

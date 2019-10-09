@@ -44,5 +44,8 @@
     <ClInclude Include="BinarySearch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StringCopy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
