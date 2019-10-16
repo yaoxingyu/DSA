@@ -47,5 +47,8 @@
     <ClInclude Include="StringCopy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LRU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
