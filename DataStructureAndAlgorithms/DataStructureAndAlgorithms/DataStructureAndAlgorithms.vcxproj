@@ -119,7 +119,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="Common.h" />
     <ClInclude Include="InsertSort.h" />
     <ClInclude Include="LadderStep.h" />
     <ClInclude Include="LinkedList.h" />
@@ -127,6 +129,7 @@
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="SelectSort.h" />
+    <ClInclude Include="SizeBalancedTree.h" />
     <ClInclude Include="StringCopy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

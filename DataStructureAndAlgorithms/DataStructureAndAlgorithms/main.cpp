@@ -12,6 +12,8 @@
 #include "LinkedList.h"
 #include "BinarySearch.h"
 #include "StringCopy.h"
+#include "BinaryTree.h"
+#include "SizeBalancedTree.h"
 
 using namespace std;
 

@@ -50,5 +50,14 @@
     <ClInclude Include="LRU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SizeBalancedTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
