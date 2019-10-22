@@ -110,7 +110,7 @@ public:
 		if (p->left != NULL && p->right != NULL)
 		{
 			BTNode* pRMin = p->right;
-			BTNode* pRMinP = NULL;
+			BTNode* pRMinP = p;
 			while (pRMin->left != NULL)
 			{
 				pRMinP = pRMin;
@@ -152,6 +152,22 @@ public:
 		if (pRoot->right != NULL)
 		{
 			PrintNodes(pRoot->right);
+		}
+	}
+
+	static int GetHight(BTNode* pRoot)
+	{
+		SAFE_TEST_RET_VAL(pRoot, NULL, 0)
+
+		if (pRoot->left == NULL && pRoot->right == NULL)
+		{
+			return 1;
+		}
+		else
+		{
+			int leftHight = GetHight(pRoot->left);
+			int rightHight = GetHight(pRoot->right);
+			return  leftHight > rightHight ? leftHight + 1 : rightHight + 1;
 		}
 	}
 

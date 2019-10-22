@@ -73,11 +73,38 @@ int main()
 	pHead = reverse(pHead);*/
 
 	///////////////////////  strcpy ///////////////////////////////
-	const char* src = "this is a test for strcpy.";
+	/*const char* src = "this is a test for strcpy.";
 	char* dst = (char*)malloc(strlen(src));
 	StringCopy(src, dst);
 
-	printf(dst);
+	printf(dst);*/
+
+	///////////////////////  Binary Tree  //////////////////////////////////////////////
+	BTNode* pRoot = new BTNode(5);
+	/*for (size_t i = 0; i < 100; i++)
+	{
+		int data = rand() % 100;
+		BinaryTree::InsertNode(pRoot, data);
+	}*/
+	BinaryTree::InsertNode(pRoot, 1);
+	BinaryTree::InsertNode(pRoot, 4);
+	BinaryTree::InsertNode(pRoot, 6);
+	BinaryTree::InsertNode(pRoot, 9);
+	BinaryTree::InsertNode(pRoot, 2);
+	BinaryTree::InsertNode(pRoot, 7);
+	BinaryTree::InsertNode(pRoot, 3);
+	BinaryTree::InsertNode(pRoot, 8);
+	
+	BinaryTree::PrintNodes(pRoot);
+	cout << endl;
+	cout <<"BinaryTree::GetHight = "<< BinaryTree::GetHight(pRoot) << endl;
+
+	BinaryTree::EraseNode(pRoot, 5);
+
+	BinaryTree::PrintNodes(pRoot);
+	cout << endl;
+	cout << "BinaryTree::GetHight = " << BinaryTree::GetHight(pRoot) << endl;
+
 
 	return 0;
 }
