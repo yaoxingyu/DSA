@@ -17,8 +17,11 @@ public:
 class BinaryTree
 {
 public:
-	BinaryTree():root(NULL){}
-	~BinaryTree(){}
+	BinaryTree(BTNode* pRoot):root(pRoot){}
+	~BinaryTree()
+	{
+		_ReleaseNode(root);
+	}
 
 public:
 	static bool InsertNode(BTNode* &pRoot, int data)
@@ -60,6 +63,8 @@ public:
 					}
 				}
 			}
+
+			return true;
 		}
 	}
 
@@ -139,6 +144,7 @@ public:
 			pp->left = pChild;
 		}
 		delete p;
+		return true;
 	}
 
 	static void PrintNodes(BTNode* pRoot)
@@ -171,6 +177,23 @@ public:
 		}
 	}
 
-public:
+private:
+	void _ReleaseNode(BTNode* pRoot)
+	{
+		SAFE_TEST_RET(pRoot, NULL)
+			if (pRoot->left)
+			{
+				_ReleaseNode(pRoot->left);
+			}
+
+		if (pRoot->right)
+		{
+			_ReleaseNode(pRoot->right);
+		}
+
+		delete pRoot;
+	}
+
+private:
 	BTNode * root;
 };

@@ -1,6 +1,7 @@
 #pragma once
 
-#include<iostream>
+#include "Common.h"
+#include <iostream>
 //二叉查找树相比于其他数据结构的优势在于查找、插入的时间复杂度较低。为O(log n)
 //但是，缺点是若待插入的序列是有序的，那么它会退化成单链表！这样查询时间将会为O（n）
 
@@ -13,9 +14,6 @@
 // 即：任意节点的子树大小不小于其兄弟节点的左右子树大小
 
 // 相比其他平衡二叉树，SBT使用size作为旋转标记，可以在O(logn)的时间复杂度内获得rank
-
-#define SAFE_TEST_RET(REALVALUE, TESTVALUE) if((REALVALUE) == (TESTVALUE)) return;
-#define SAFE_TEST_RET_VAL(REALVALUE, TESTVALUE, RETVALUE) if((RETVALUE) == (TESTVALUE)) return RETVALUE;
 
 class SBNode
 {
