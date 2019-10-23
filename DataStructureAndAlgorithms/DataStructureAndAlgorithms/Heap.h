@@ -78,6 +78,7 @@ private:
 	// 建堆
 	static void _buildHeap(int a[], int n)
 	{
+		// 因为是自上而下堆化，所以叶子节点不需要堆化，只需从倒数第二层开始建堆
 		for (int i = (n-1)/2; i >=0; --i)
 		{
 			_topHeapfy(a, n, i);
