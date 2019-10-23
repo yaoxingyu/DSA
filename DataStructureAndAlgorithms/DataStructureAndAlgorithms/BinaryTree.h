@@ -20,7 +20,7 @@ public:
 	BinaryTree(BTNode* pRoot):root(pRoot){}
 	~BinaryTree()
 	{
-		_ReleaseNode(root);
+		_releaseNode(root);
 	}
 
 public:
@@ -178,17 +178,17 @@ public:
 	}
 
 private:
-	void _ReleaseNode(BTNode* pRoot)
+	void _releaseNode(BTNode* pRoot)
 	{
 		SAFE_TEST_RET(pRoot, NULL)
 			if (pRoot->left)
 			{
-				_ReleaseNode(pRoot->left);
+				_releaseNode(pRoot->left);
 			}
 
 		if (pRoot->right)
 		{
-			_ReleaseNode(pRoot->right);
+			_releaseNode(pRoot->right);
 		}
 
 		delete pRoot;
