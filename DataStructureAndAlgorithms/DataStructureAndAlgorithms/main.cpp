@@ -14,6 +14,7 @@
 #include "StringCopy.h"
 #include "BinaryTree.h"
 #include "SizeBalancedTree.h"
+#include "Heap.h"
 
 using namespace std;
 
@@ -80,13 +81,13 @@ int main()
 	printf(dst);*/
 
 	///////////////////////  Binary Tree  //////////////////////////////////////////////
-	BTNode* pRoot = new BTNode(5);
+	//BTNode* pRoot = new BTNode(5);
 	/*for (size_t i = 0; i < 100; i++)
 	{
 		int data = rand() % 100;
 		BinaryTree::InsertNode(pRoot, data);
 	}*/
-	BinaryTree::InsertNode(pRoot, 1);
+	/*BinaryTree::InsertNode(pRoot, 1);
 	BinaryTree::InsertNode(pRoot, 4);
 	BinaryTree::InsertNode(pRoot, 6);
 	BinaryTree::InsertNode(pRoot, 9);
@@ -103,8 +104,26 @@ int main()
 
 	BinaryTree::PrintNodes(pRoot);
 	cout << endl;
-	cout << "BinaryTree::GetHight = " << BinaryTree::GetHight(pRoot) << endl;
+	cout << "BinaryTree::GetHight = " << BinaryTree::GetHight(pRoot) << endl;*/
 
+	//////////////////////////// Heap /////////////////////////////////
+	Heap heap(100);
+	heap.Insert(20);
+	heap.Insert(2);
+	heap.Insert(11);
+	heap.Insert(7);
+	heap.Insert(14);
+	heap.Insert(3);
+	heap.Insert(5);
+	heap.Insert(16);
+	heap.Insert(10);
+	heap.Insert(27);
+	heap.Insert(28);
+	heap.Insert(21);
+
+	heap.EraseRoot();
+
+	Heap::Sort(a, length);
 
 	return 0;
 }
