@@ -108,7 +108,7 @@ int main()
 	cout << "BinaryTree::GetHight = " << BinaryTree::GetHight(pRoot) << endl;*/
 
 	//////////////////////////// Heap /////////////////////////////////
-	Heap heap(100);
+	/*Heap heap(100);
 	heap.Insert(20);
 	heap.Insert(2);
 	heap.Insert(11);
@@ -124,7 +124,22 @@ int main()
 
 	heap.EraseRoot();
 
-	Heap::Sort(a, length);
+	Heap::Sort(a, length);*/
+
+	//////////////////////  Graph ///////////////////////////////
+	Graph g(8);
+	g.AddEdge(0, 1);
+	g.AddEdge(0, 3);
+	g.AddEdge(1, 2);
+	g.AddEdge(1, 4);
+	g.AddEdge(2, 5);
+	g.AddEdge(3, 4);
+	g.AddEdge(4, 5);
+	g.AddEdge(4, 6);
+	g.AddEdge(5, 7);
+	g.AddEdge(6, 7);
+
+	g.DFS(0, 6);
 
 	return 0;
 }

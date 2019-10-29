@@ -17,16 +17,16 @@ public:
 	// ÎŞÏòÍ¼
 	void AddEdge(int s, int t)
 	{
-		adj[s].push_back(s);
+		adj[s].push_back(t);
 		adj[t].push_back(s);
 	}
 
 public:
 	void Print(int* pre, int start, int target)
 	{
+		std::cout << target << "<==";
 		if (pre[target] != -1 && target != start)
 		{
-			std::cout << target << "<==";
 			Print(pre, start, pre[target]);
 		}
 	}
