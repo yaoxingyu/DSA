@@ -15,6 +15,7 @@
 #include "BinaryTree.h"
 #include "SizeBalancedTree.h"
 #include "Heap.h"
+#include "Graph.h"
 
 using namespace std;
 
