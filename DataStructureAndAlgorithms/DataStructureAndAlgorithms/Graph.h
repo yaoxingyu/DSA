@@ -33,7 +33,7 @@ public:
 	}
 
 public:
-	// deep first search
+	// deep first search 深度优先借助一个栈（递归）后进先出实现
 	void DFS(int start, int target)
 	{
 		found = false;
@@ -48,7 +48,7 @@ public:
 		Print(pre, start, target);
 	}
 
-	// breadth first search
+	// breadth first search 广度优先借助一个队列 先进先出实现
 	void BFS(int start, int target)
 	{
 		bool* visited = new bool[cnt];
