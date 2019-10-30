@@ -2,6 +2,7 @@
 
 #include "Common.h"
 #include <list>
+#include <queue>
 #include <iostream>
 
 class Graph
@@ -45,6 +46,41 @@ public:
 		}
 		_dfs(start, target, visited, pre);
 		Print(pre, start, target);
+	}
+
+	// breadth first search
+	void BFS(int start, int target)
+	{
+		bool* visited = new bool[cnt];
+		int* pre = new int[cnt];
+		for (int i = 0; i < cnt; i++)
+		{
+			visited[i] = false;
+			pre[i] = -1;
+		}
+		std::queue<int> queue;
+
+		queue.push(start);
+		while (queue.size())
+		{
+			int cur = queue.front();
+			queue.pop();
+			for (auto itr = adj[cur].begin(); itr != adj[cur].end(); itr++)
+			{
+				int x = *itr;
+				if (visited[x] == false)
+				{
+					pre[x] = cur;
+					if (x == target)
+					{
+						Print(pre, start, target);
+						return;
+					}
+					queue.push(x);
+					visited[x] = true;
+				}
+			}
+		}
 	}
 private:
 	void _dfs(int start, int target, bool* visited, int* pre)

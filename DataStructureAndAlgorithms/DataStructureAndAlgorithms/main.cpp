@@ -140,6 +140,7 @@ int main()
 	g.AddEdge(6, 7);
 
 	g.DFS(0, 6);
+	g.BFS(0, 6);
 
 	return 0;
 }
