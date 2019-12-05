@@ -16,6 +16,7 @@
 #include "SizeBalancedTree.h"
 #include "Heap.h"
 #include "Graph.h"
+#include "EightQueen.h"
 
 using namespace std;
 
@@ -127,7 +128,7 @@ int main()
 	Heap::Sort(a, length);*/
 
 	//////////////////////  Graph ///////////////////////////////
-	Graph g(8);
+	/*Graph g(8);
 	g.AddEdge(0, 1);
 	g.AddEdge(0, 3);
 	g.AddEdge(1, 2);
@@ -140,7 +141,12 @@ int main()
 	g.AddEdge(6, 7);
 
 	g.DFS(0, 6);
-	g.BFS(0, 6);
+	g.BFS(0, 6);*/
+
+	/////////////////////// Eight Queen ///////////////////////////////////
+
+	EightQueen eq;
+	eq.CalQueens(0);
 
 	return 0;
 }

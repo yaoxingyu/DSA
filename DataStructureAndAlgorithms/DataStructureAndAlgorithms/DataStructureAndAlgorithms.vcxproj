@@ -122,6 +122,7 @@
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="Common.h" />
+    <ClInclude Include="EightQueen.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="Heap.h" />
     <ClInclude Include="InsertSort.h" />
